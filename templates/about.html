@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="glass-card about-card" data-aos="fade-right">
+  <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Himika Profile" class="profile-img">
+  <div>
+    <h2>About Me</h2>
+    <p>
+      I’m a recent B.Tech Graduate with strong experience in backend development using Python, SQL and GenAI.
+      I love building tools that solve real-world problems through automation and intelligence.
+    </p>
+    <div class="socials">
+      <a href="mailto:himikajain2110@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/himika-jain-a868741b7/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/himikajain15" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+  </div>
+</section>
+{% endblock %}

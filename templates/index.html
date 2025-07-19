@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="glass-card hero" data-aos="fade-up">
+  <h2>Hi, I’m</h2>
+  <h1>HIMIKA JAIN</h1>
+  <p class="title">Just graduated. Already automating the future.</p>
+  <a href="{{ url_for('static', filename='Himika_Jain_Resume.pdf') }}">
+    <button class="resume-btn">Download Resume</button>
+  </a>
+</section>
+{% endblock %}

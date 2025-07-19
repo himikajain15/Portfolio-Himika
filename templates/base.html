@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Himika Jain | Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <script defer src="{{ url_for('static', filename='js/theme.js') }}"></script>
+  <script defer src="{{ url_for('static', filename='js/matrix.js') }}"></script>
+</head>
+<body>
+  <!-- Theme toggle button -->
+  <button id="themeToggle" class="theme-toggle">🌙</button>
+
+  <!-- Navigation -->
+  <nav>
+    <h1>Himika Jain</h1>
+    <ul>
+      <li><a href="{{ url_for('home') }}">Home</a></li>
+      <li><a href="{{ url_for('about') }}">About</a></li>
+      <li><a href="{{ url_for('projects') }}">Projects</a></li>
+      <li><a href="{{ url_for('contact') }}">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Page content -->
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+  <script defer src="{{ url_for('static', filename='js/matrix.js') }}"></script>
+
+</body>
+</html>
